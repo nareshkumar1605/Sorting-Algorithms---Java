@@ -1,0 +1,17 @@
+16,comparable insertion sort,48553ns,binary insertion sort,50526ns,heap sort,22504119ns,simple insertion sort,31374713ns,merge sort,55432923ns
+256,merge sort,786322ns,binary insertion sort,1169219ns,heap sort,1528038ns,comparable insertion sort,4357139ns,simple insertion sort,8930595ns
+4096,merge sort,6739394ns,heap sort,11322718ns,simple insertion sort,61720340ns,comparable insertion sort,88514096ns,binary insertion sort,113434419ns
+
+
+EXPLANATION:
+
+From the results, we can see that the 16 Word[] array is sorted the fastest using 
+binary insertion sort, the 256[] Word array is sorted the fastest using merge sort, 
+and the 4096 word[] array is also sorted the fastest using merge sort. I ran the 
+tests over 10 times to check for consistency of the algorithms and running times. 
+Therefore in general, for a small array(tested with the 16 word[] array in our case), 
+binary insertion sort is the most preferable, for medium sized arrays(tested with the 256[] 
+word array in our case) as well as for large sized arrays(tested with the 4096[] word array 
+, merge sort is the most preferred sorting algorithm. Another thing noted is that even though 
+ binary insertion sort is the fastest for small and medium sized arrays, it is the slowest 
+for large size arrays. 
